@@ -4,7 +4,7 @@ package com.roman.util;
  * Created by LINKOR on 25.11.2016 in 16:33.
  * Date: 2016.11.25
  */
-public final class ConvertTo {
+public class ConvertTo {
 
     private ConvertTo() {}
 
@@ -21,6 +21,13 @@ public final class ConvertTo {
     public static char[] string(String s) {
         return s.toCharArray();
     }
+    public static byte[] string(char[] in) {
+        return new String(in).getBytes();
+    }
+    public static char[] chars(byte[] in) {
+        return new String(in).toCharArray();
+    }
+
     public static byte[] prim(char[] s) {
         byte[] out = new byte[s.length];
         for (int i = 0; i < s.length; i++) {

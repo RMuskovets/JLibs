@@ -25,7 +25,6 @@ public class PDFReader {
         }
 
         oos.close();
-        System.out.println("stop");
         is.close();
         return oos.toString();
     }
